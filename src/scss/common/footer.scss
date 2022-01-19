@@ -1,0 +1,25 @@
+.footer {
+  z-index: 99;
+  padding: 1rem 0;
+  background-color: $whiteColor;
+  border-top: 1px solid $borderColor;
+}
+
+.nav-footer {
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    :not(:last-child) {
+      margin-right: 1rem;
+    }
+    
+  }
+  
+  &____item {
+    font-size: 0, 875rem;
+  }
+}

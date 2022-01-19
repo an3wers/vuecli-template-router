@@ -1,0 +1,43 @@
+@import 'vars';
+@import 'reset';
+@import 'common/common';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 72px; // if header is fixed do mt: headerHeight
+  margin-bottom: 12px;
+}
+
+.container {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $lgDesktopWidth;
+  @media screen and (max-width: $lgDesktopWidth) {
+    padding: 0 16px;
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: $tableWidth;
+  }
+  @media screen and (max-width: $tableWidth) {
+    max-width: $smTableWidth;
+  }
+  @media screen and (max-width: $smTableWidth) {
+    max-width: $phoneWidth;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    max-width: $smPhoneWidth;
+  }
+}
+
+

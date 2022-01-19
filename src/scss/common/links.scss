@@ -1,0 +1,17 @@
+a {
+    opacity: 1;
+    transition: all 0.2s ease;
+    color: $primaryColor;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.7;
+      color: $primaryColor;
+    }
+  
+    &:focus,
+    &:active {
+      color: $primaryColor;
+    }
+  }
